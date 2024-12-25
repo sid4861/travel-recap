@@ -23,10 +23,12 @@ import { cities, citiesComboBox } from "@/cities.const";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import VerticalCutReveal from "./ui/VerticalCutReveal";
-import { Instrument_Serif } from "next/font/google";
+import { Instrument_Serif, Manrope } from "next/font/google";
 import { Badge } from "./ui/badge";
+import LetterSwapPingPong from "./ui/LetterPingPong";
 
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
+const manrope = Manrope({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
 export type City = {
   name: string;
@@ -161,7 +163,7 @@ const TravelRecap: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen">
+    <div className={`${manrope.className} flex flex-col lg:flex-row h-screen`}>
       <div className="lg:flex-grow flex flex-col justify-start items-center p-8 lg:py-16 lg:px-16 bg-slate-50  lg:overflow-y-auto">
         <div>
           <div className={`text-5xl ${serif.className} text-blue-700`}>
@@ -205,7 +207,24 @@ const TravelRecap: React.FC = () => {
               {`TRAVEL ✈️ RECAP.`}
             </VerticalCutReveal>
           </div>
-
+          <div className="mt-4 font-medium text-slate-600 flex gap-2">
+            by{" "}
+            <a href="https://x.com/Siddharth0X" target="_blank">
+              <LetterSwapPingPong
+                label="Siddharth"
+                staggerFrom={"center"}
+                reverse={false}
+              />
+            </a>{" "}
+            &{" "}
+            <a href="https://v0.dev/" target="_blank">
+              <LetterSwapPingPong
+                label="v0"
+                staggerFrom={"center"}
+                reverse={false}
+              />
+            </a>
+          </div>
           <div className="space-y-16">
             <Label htmlFor="visited-city" className="mr-4">
               Add Visited City
@@ -275,7 +294,7 @@ const TravelRecap: React.FC = () => {
             </Popover>
 
             {visitedCities.length > 0 && (
-              <div className="w-[500px]">
+              <div className="w-[300px] lg:w-[500px]">
                 <ul className="flex flex-wrap gap-1 list-none">
                   {visitedCities.map((city) => (
                     <li key={city.name}>

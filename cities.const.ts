@@ -26,9 +26,14 @@ const cities: City[] = [
     // Japan (jp)
     { name: "Kyoto", lat: 35.0116, lng: 135.7681, code: "jp" },
     { name: "Osaka", lat: 34.6937, lng: 135.5023, code: "jp" },
+    { name: "Nara", lat: 34.6851, lng: 135.8048, code: "jp" },
     { name: "Hiroshima", lat: 34.3853, lng: 132.4553, code: "jp" },
-    { name: "Fukuoka", lat: 33.5902, lng: 130.4017, code: "jp" },
-    { name: "Sapporo", lat: 43.0618, lng: 141.3545, code: "jp" },
+    { name: "Fukuoka", lat: 33.5904, lng: 130.4017, code: "jp" },
+    { name: "Sapporo", lat: 43.0621, lng: 141.3544, code: "jp" },
+    { name: "Nagoya", lat: 35.1815, lng: 136.9066, code: "jp" },
+    { name: "Hakone", lat: 35.2320, lng: 139.1068, code: "jp" },
+    { name: "Kanazawa", lat: 36.5613, lng: 136.6562, code: "jp" },
+    { name: "Kobe", lat: 34.6901, lng: 135.1955, code: "jp" },
 
     // Australia (au)
     { name: "Melbourne", lat: -37.8136, lng: 144.9631, code: "au" },
@@ -50,6 +55,11 @@ const cities: City[] = [
     { name: "Lyon", lat: 45.7640, lng: 4.8357, code: "fr" },
     { name: "Marseille", lat: 43.2965, lng: 5.3698, code: "fr" },
     { name: "Bordeaux", lat: 44.8378, lng: -0.5792, code: "fr" },
+    { name: "Toulouse", lat: 43.6045, lng: 1.4442, code: "fr" },
+    { name: "Strasbourg", lat: 48.5734, lng: 7.7521, code: "fr" },
+    { name: "Cannes", lat: 43.5528, lng: 7.0174, code: "fr" },
+    { name: "Montpellier", lat: 43.6117, lng: 3.8767, code: "fr" },
+    { name: "Lille", lat: 50.6292, lng: 3.0573, code: "fr" },
 
     // Italy (it)
     { name: "Rome", lat: 41.9028, lng: 12.4964, code: "it" },
@@ -57,6 +67,11 @@ const cities: City[] = [
     { name: "Florence", lat: 43.7696, lng: 11.2558, code: "it" },
     { name: "Milan", lat: 45.4642, lng: 9.1900, code: "it" },
     { name: "Naples", lat: 40.8518, lng: 14.2681, code: "it" },
+    { name: "Pisa", lat: 43.7166, lng: 10.4036, code: "it" },
+    { name: "Verona", lat: 45.4384, lng: 10.9916, code: "it" },
+    { name: "Bologna", lat: 44.4949, lng: 11.3426, code: "it" },
+    { name: "Turin", lat: 45.0703, lng: 7.6869, code: "it" },
+    { name: "Amalfi", lat: 40.6333, lng: 14.6025, code: "it" },
 
     // Germany (de)
     { name: "Berlin", lat: 52.5200, lng: 13.4050, code: "de" },
@@ -64,6 +79,12 @@ const cities: City[] = [
     { name: "Frankfurt", lat: 50.1109, lng: 8.6821, code: "de" },
     { name: "Hamburg", lat: 53.5511, lng: 9.9937, code: "de" },
     { name: "Cologne", lat: 50.9375, lng: 6.9603, code: "de" },
+    { name: "Düsseldorf", lat: 51.2277, lng: 6.7735, code: "de" },
+    { name: "Stuttgart", lat: 48.7758, lng: 9.1829, code: "de" },
+    { name: "Dresden", lat: 51.0504, lng: 13.7373, code: "de" },
+    { name: "Leipzig", lat: 51.3397, lng: 12.3731, code: "de" },
+    { name: "Heidelberg", lat: 49.3988, lng: 8.6724, code: "de" },
+
 
     // Spain (es)
     { name: "Barcelona", lat: 41.3851, lng: 2.1734, code: "es" },
@@ -183,7 +204,88 @@ const cities: City[] = [
     { name: "Ras Al Khaimah", lat: 25.8007, lng: 55.9762, code: "ae" },
     { name: "Umm Al Quwain", lat: 25.5647, lng: 55.5552, code: "ae" },
     { name: "Khor Fakkan", lat: 25.3310, lng: 56.3419, code: "ae" },
-    { name: "Hatta", lat: 24.7968, lng: 56.1281, code: "ae" }
+    { name: "Hatta", lat: 24.7968, lng: 56.1281, code: "ae" },
+
+    // Russia (ru)
+    { name: "Moscow", lat: 55.7558, lng: 37.6173, code: "ru" },
+    { name: "Saint Petersburg", lat: 59.9343, lng: 30.3351, code: "ru" },
+    { name: "Kazan", lat: 55.8304, lng: 49.0661, code: "ru" },
+    { name: "Sochi", lat: 43.6028, lng: 39.7342, code: "ru" },
+    { name: "Yekaterinburg", lat: 56.8389, lng: 60.6057, code: "ru" },
+    { name: "Novosibirsk", lat: 55.0084, lng: 82.9357, code: "ru" },
+    { name: "Vladivostok", lat: 43.1155, lng: 131.8855, code: "ru" },
+    { name: "Rostov-on-Don", lat: 47.2357, lng: 39.7015, code: "ru" },
+    { name: "Kaliningrad", lat: 54.7104, lng: 20.4522, code: "ru" },
+    { name: "Nizhny Novgorod", lat: 56.3269, lng: 44.0059, code: "ru" },
+
+    // Vietnam (vn)
+    { name: "Hanoi", lat: 21.0285, lng: 105.8542, code: "vn" },
+    { name: "Ho Chi Minh City", lat: 10.8231, lng: 106.6297, code: "vn" },
+    { name: "Ha Long Bay", lat: 20.9101, lng: 107.1839, code: "vn" },
+    { name: "Da Nang", lat: 16.0544, lng: 108.2022, code: "vn" },
+    { name: "Hoi An", lat: 15.8801, lng: 108.3380, code: "vn" },
+    { name: "Hue", lat: 16.4637, lng: 107.5909, code: "vn" },
+    { name: "Nha Trang", lat: 12.2388, lng: 109.1967, code: "vn" },
+    { name: "Sapa", lat: 22.3350, lng: 103.8304, code: "vn" },
+    { name: "Phu Quoc", lat: 10.2270, lng: 103.9630, code: "vn" },
+    { name: "Can Tho", lat: 10.0452, lng: 105.7469, code: "vn" },
+
+    // Malaysia (my)
+    { name: "Kuala Lumpur", lat: 3.1390, lng: 101.6869, code: "my" },
+    { name: "George Town", lat: 5.4141, lng: 100.3288, code: "my" },
+    { name: "Langkawi", lat: 6.3564, lng: 99.7830, code: "my" },
+    { name: "Malacca", lat: 2.1896, lng: 102.2501, code: "my" },
+    { name: "Kota Kinabalu", lat: 5.9804, lng: 116.0735, code: "my" },
+    { name: "Ipoh", lat: 4.5975, lng: 101.0901, code: "my" },
+    { name: "Cameron Highlands", lat: 4.4691, lng: 101.3889, code: "my" },
+    { name: "Johor Bahru", lat: 1.4927, lng: 103.7414, code: "my" },
+    { name: "Kuching", lat: 1.5533, lng: 110.3591, code: "my" },
+
+
+
+    // Philippines (ph)
+
+
+    { name: "Boracay", lat: 11.9674, lng: 121.9248, code: "ph" },
+    { name: "Palawan", lat: 9.8349, lng: 118.7382, code: "ph" },
+    { name: "Davao City", lat: 7.1907, lng: 125.4553, code: "ph" },
+    { name: "Baguio", lat: 16.4023, lng: 120.5960, code: "ph" },
+    { name: "Vigan", lat: 17.5738, lng: 120.3869, code: "ph" },
+    { name: "Tagaytay", lat: 14.1061, lng: 120.9741, code: "ph" },
+
+    // Philippines (ph)
+    { name: "Manila", lat: 14.5995, lng: 120.9842, code: "ph" },
+    { name: "Cebu City", lat: 10.3157, lng: 123.8854, code: "ph" },
+    { name: "Bohol", lat: 9.8490, lng: 124.1435, code: "ph" },
+    { name: "Iloilo City", lat: 10.7202, lng: 122.5621, code: "ph" },
+
+
+    // Singapore (sg)
+    { name: "Singapore", lat: 1.3521, lng: 103.8198, code: "sg" },
+    // Myanmar (mm)
+    { name: "Yangon", lat: 16.8409, lng: 96.1735, code: "mm" },
+    { name: "Bagan", lat: 21.1717, lng: 94.8585, code: "mm" },
+    { name: "Mandalay", lat: 21.9162, lng: 96.0844, code: "mm" },
+    { name: "Inle Lake", lat: 20.5662, lng: 96.9261, code: "mm" },
+    { name: "Naypyidaw", lat: 19.7633, lng: 96.0785, code: "mm" },
+    { name: "Ngapali Beach", lat: 18.4500, lng: 94.3333, code: "mm" },
+    { name: "Pyin Oo Lwin", lat: 22.0353, lng: 96.4699, code: "mm" },
+    { name: "Hpa-An", lat: 16.8892, lng: 97.6346, code: "mm" },
+    { name: "Golden Rock", lat: 17.4836, lng: 97.0990, code: "mm" },
+    { name: "Taunggyi", lat: 20.7883, lng: 97.0378, code: "mm" },
+
+    // Sri Lanka (lk)
+    { name: "Colombo", lat: 6.9271, lng: 79.8612, code: "lk" },
+    { name: "Kandy", lat: 7.2906, lng: 80.6337, code: "lk" },
+    { name: "Galle", lat: 6.0326, lng: 80.2167, code: "lk" },
+    { name: "Ella", lat: 6.8753, lng: 81.0463, code: "lk" },
+    { name: "Nuwara Eliya", lat: 6.9497, lng: 80.7891, code: "lk" },
+    { name: "Sigiriya", lat: 7.9579, lng: 80.7603, code: "lk" },
+    { name: "Jaffna", lat: 9.6615, lng: 80.0255, code: "lk" },
+    { name: "Trincomalee", lat: 8.5874, lng: 81.2152, code: "lk" },
+    { name: "Arugam Bay", lat: 6.8390, lng: 81.8365, code: "lk" },
+    { name: "Anuradhapura", lat: 8.3114, lng: 80.4037, code: "lk" }
+
 ]
 
 
@@ -257,6 +359,10 @@ const citiesComboBox = [
         "value": "Osaka"
     },
     {
+        "label": "Nara",
+        "value": "Nara"
+    },
+    {
         "label": "Hiroshima",
         "value": "Hiroshima"
     },
@@ -267,6 +373,22 @@ const citiesComboBox = [
     {
         "label": "Sapporo",
         "value": "Sapporo"
+    },
+    {
+        "label": "Nagoya",
+        "value": "Nagoya"
+    },
+    {
+        "label": "Hakone",
+        "value": "Hakone"
+    },
+    {
+        "label": "Kanazawa",
+        "value": "Kanazawa"
+    },
+    {
+        "label": "Kobe",
+        "value": "Kobe"
     },
     {
         "label": "Melbourne",
@@ -329,6 +451,26 @@ const citiesComboBox = [
         "value": "Bordeaux"
     },
     {
+        "label": "Toulouse",
+        "value": "Toulouse"
+    },
+    {
+        "label": "Strasbourg",
+        "value": "Strasbourg"
+    },
+    {
+        "label": "Cannes",
+        "value": "Cannes"
+    },
+    {
+        "label": "Montpellier",
+        "value": "Montpellier"
+    },
+    {
+        "label": "Lille",
+        "value": "Lille"
+    },
+    {
         "label": "Rome",
         "value": "Rome"
     },
@@ -349,6 +491,26 @@ const citiesComboBox = [
         "value": "Naples"
     },
     {
+        "label": "Pisa",
+        "value": "Pisa"
+    },
+    {
+        "label": "Verona",
+        "value": "Verona"
+    },
+    {
+        "label": "Bologna",
+        "value": "Bologna"
+    },
+    {
+        "label": "Turin",
+        "value": "Turin"
+    },
+    {
+        "label": "Amalfi",
+        "value": "Amalfi"
+    },
+    {
         "label": "Berlin",
         "value": "Berlin"
     },
@@ -367,6 +529,26 @@ const citiesComboBox = [
     {
         "label": "Cologne",
         "value": "Cologne"
+    },
+    {
+        "label": "Düsseldorf",
+        "value": "Düsseldorf"
+    },
+    {
+        "label": "Stuttgart",
+        "value": "Stuttgart"
+    },
+    {
+        "label": "Dresden",
+        "value": "Dresden"
+    },
+    {
+        "label": "Leipzig",
+        "value": "Leipzig"
+    },
+    {
+        "label": "Heidelberg",
+        "value": "Heidelberg"
     },
     {
         "label": "Barcelona",
@@ -767,6 +949,246 @@ const citiesComboBox = [
     {
         "label": "Hatta",
         "value": "Hatta"
+    },
+    {
+        "label": "Moscow",
+        "value": "Moscow"
+    },
+    {
+        "label": "Saint Petersburg",
+        "value": "Saint Petersburg"
+    },
+    {
+        "label": "Kazan",
+        "value": "Kazan"
+    },
+    {
+        "label": "Sochi",
+        "value": "Sochi"
+    },
+    {
+        "label": "Yekaterinburg",
+        "value": "Yekaterinburg"
+    },
+    {
+        "label": "Novosibirsk",
+        "value": "Novosibirsk"
+    },
+    {
+        "label": "Vladivostok",
+        "value": "Vladivostok"
+    },
+    {
+        "label": "Rostov-on-Don",
+        "value": "Rostov-on-Don"
+    },
+    {
+        "label": "Kaliningrad",
+        "value": "Kaliningrad"
+    },
+    {
+        "label": "Nizhny Novgorod",
+        "value": "Nizhny Novgorod"
+    },
+    {
+        "label": "Hanoi",
+        "value": "Hanoi"
+    },
+    {
+        "label": "Ho Chi Minh City",
+        "value": "Ho Chi Minh City"
+    },
+    {
+        "label": "Ha Long Bay",
+        "value": "Ha Long Bay"
+    },
+    {
+        "label": "Da Nang",
+        "value": "Da Nang"
+    },
+    {
+        "label": "Hoi An",
+        "value": "Hoi An"
+    },
+    {
+        "label": "Hue",
+        "value": "Hue"
+    },
+    {
+        "label": "Nha Trang",
+        "value": "Nha Trang"
+    },
+    {
+        "label": "Sapa",
+        "value": "Sapa"
+    },
+    {
+        "label": "Phu Quoc",
+        "value": "Phu Quoc"
+    },
+    {
+        "label": "Can Tho",
+        "value": "Can Tho"
+    },
+    {
+        "label": "Kuala Lumpur",
+        "value": "Kuala Lumpur"
+    },
+    {
+        "label": "George Town",
+        "value": "George Town"
+    },
+    {
+        "label": "Langkawi",
+        "value": "Langkawi"
+    },
+    {
+        "label": "Malacca",
+        "value": "Malacca"
+    },
+    {
+        "label": "Kota Kinabalu",
+        "value": "Kota Kinabalu"
+    },
+    {
+        "label": "Ipoh",
+        "value": "Ipoh"
+    },
+    {
+        "label": "Cameron Highlands",
+        "value": "Cameron Highlands"
+    },
+    {
+        "label": "Johor Bahru",
+        "value": "Johor Bahru"
+    },
+    {
+        "label": "Kuching",
+        "value": "Kuching"
+    },
+    {
+        "label": "Manila",
+        "value": "Manila"
+    },
+    {
+        "label": "Cebu City",
+        "value": "Cebu City"
+    },
+    {
+        "label": "Boracay",
+        "value": "Boracay"
+    },
+    {
+        "label": "Palawan",
+        "value": "Palawan"
+    },
+    {
+        "label": "Davao City",
+        "value": "Davao City"
+    },
+    {
+        "label": "Baguio",
+        "value": "Baguio"
+    },
+    {
+        "label": "Vigan",
+        "value": "Vigan"
+    },
+    {
+        "label": "Tagaytay",
+        "value": "Tagaytay"
+    },
+    {
+        "label": "Bohol",
+        "value": "Bohol"
+    },
+    {
+        "label": "Iloilo City",
+        "value": "Iloilo City"
+    },
+    {
+        "label": "Singapore",
+        "value": "Singapore"
+    },
+    {
+        "label": "Yangon",
+        "value": "Yangon"
+    },
+    {
+        "label": "Bagan",
+        "value": "Bagan"
+    },
+    {
+        "label": "Mandalay",
+        "value": "Mandalay"
+    },
+    {
+        "label": "Inle Lake",
+        "value": "Inle Lake"
+    },
+    {
+        "label": "Naypyidaw",
+        "value": "Naypyidaw"
+    },
+    {
+        "label": "Ngapali Beach",
+        "value": "Ngapali Beach"
+    },
+    {
+        "label": "Pyin Oo Lwin",
+        "value": "Pyin Oo Lwin"
+    },
+    {
+        "label": "Hpa-An",
+        "value": "Hpa-An"
+    },
+    {
+        "label": "Golden Rock",
+        "value": "Golden Rock"
+    },
+    {
+        "label": "Taunggyi",
+        "value": "Taunggyi"
+    },
+    {
+        "label": "Colombo",
+        "value": "Colombo"
+    },
+    {
+        "label": "Kandy",
+        "value": "Kandy"
+    },
+    {
+        "label": "Galle",
+        "value": "Galle"
+    },
+    {
+        "label": "Ella",
+        "value": "Ella"
+    },
+    {
+        "label": "Nuwara Eliya",
+        "value": "Nuwara Eliya"
+    },
+    {
+        "label": "Sigiriya",
+        "value": "Sigiriya"
+    },
+    {
+        "label": "Jaffna",
+        "value": "Jaffna"
+    },
+    {
+        "label": "Trincomalee",
+        "value": "Trincomalee"
+    },
+    {
+        "label": "Arugam Bay",
+        "value": "Arugam Bay"
+    },
+    {
+        "label": "Anuradhapura",
+        "value": "Anuradhapura"
     }
 ]
 
