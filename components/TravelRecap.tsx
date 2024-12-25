@@ -36,7 +36,6 @@ export type City = {
 };
 
 const TravelRecap: React.FC = () => {
-  // @ts-ignore
   const globeEl = useRef<any>();
   const [visitedCities, setVisitedCities] = useState<City[]>([]);
   const [isRecording, setIsRecording] = useState(false);
@@ -54,7 +53,7 @@ const TravelRecap: React.FC = () => {
       return new Promise<void>((resolve, reject) => {
         textureLoader.load(
           `https://flagcdn.com/32x24/${city.code}.png`,
-          (texture: { minFilter: any; }) => {
+          (texture: { minFilter: any }) => {
             texture.minFilter = THREE.LinearFilter;
 
             materials[city.code] = new THREE.SpriteMaterial({
