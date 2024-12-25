@@ -99,17 +99,37 @@ const cities: City[] = [
     { name: "San Sebastian", lat: 43.3183, lng: -1.9812, code: "es" },
 
     // India (in)
-    { name: "New Delhi", lat: 28.6139, lng: 77.2090, code: "in" },
+
+    { name: "Delhi", lat: 28.6139, lng: 77.2090, code: "in" },
     { name: "Mumbai", lat: 19.0760, lng: 72.8777, code: "in" },
-    { name: "Jaipur", lat: 26.9124, lng: 75.7873, code: "in" },
-    { name: "Agra", lat: 27.1767, lng: 78.0081, code: "in" },
-    { name: "Goa", lat: 15.2993, lng: 74.1240, code: "in" },
-    { name: "Bengaluru", lat: 12.9716, lng: 77.5946, code: "in" },
+    { name: "Bangalore", lat: 12.9716, lng: 77.5946, code: "in" },
     { name: "Kolkata", lat: 22.5726, lng: 88.3639, code: "in" },
     { name: "Chennai", lat: 13.0827, lng: 80.2707, code: "in" },
+    { name: "Jaipur", lat: 26.9124, lng: 75.7873, code: "in" },
+    { name: "Agra", lat: 27.1767, lng: 78.0081, code: "in" },
     { name: "Varanasi", lat: 25.3176, lng: 82.9739, code: "in" },
+    { name: "Goa", lat: 15.2993, lng: 74.1240, code: "in" },
+    { name: "Kerala (Munnar)", lat: 10.0889, lng: 77.0595, code: "in" },
+    { name: "Hyderabad", lat: 17.3850, lng: 78.4867, code: "in" },
+    { name: "Pune", lat: 18.5204, lng: 73.8567, code: "in" },
     { name: "Udaipur", lat: 24.5854, lng: 73.7125, code: "in" },
-
+    { name: "Rishikesh", lat: 30.0869, lng: 78.2676, code: "in" },
+    { name: "Amritsar", lat: 31.6340, lng: 74.8723, code: "in" },
+    { name: "Leh", lat: 34.1526, lng: 77.5770, code: "in" },
+    { name: "Shimla", lat: 31.1048, lng: 77.1734, code: "in" },
+    { name: "Manali", lat: 32.2396, lng: 77.1887, code: "in" },
+    { name: "Darjeeling", lat: 27.0410, lng: 88.2638, code: "in" },
+    { name: "Mysore", lat: 12.2958, lng: 76.6394, code: "in" },
+    { name: "Hampi", lat: 15.3350, lng: 76.4600, code: "in" },
+    { name: "Khajuraho", lat: 24.8318, lng: 79.9199, code: "in" },
+    { name: "Ajanta Caves", lat: 20.5519, lng: 75.7033, code: "in" },
+    { name: "Ellora Caves", lat: 20.0269, lng: 75.1794, code: "in" },
+    { name: "Kanyakumari", lat: 8.0883, lng: 77.5385, code: "in" },
+    { name: "Coorg", lat: 12.3375, lng: 75.8069, code: "in" },
+    { name: "Andaman and Nicobar Islands", lat: 11.7401, lng: 92.6586, code: "in" },
+    { name: "Chandigarh", lat: 30.7333, lng: 76.7794, code: "in" },
+    { name: "Jodhpur", lat: 26.2389, lng: 73.0243, code: "in" },
+    { name: "Bodh Gaya", lat: 24.6950, lng: 84.9914, code: "in" },
     // China (cn)
     { name: "Beijing", lat: 39.9042, lng: 116.4074, code: "cn" },
     { name: "Shanghai", lat: 31.2304, lng: 121.4737, code: "cn" },
@@ -590,46 +610,36 @@ const citiesComboBox = [
         "label": "San Sebastian",
         "value": "San Sebastian"
     },
-    {
-        "label": "New Delhi",
-        "value": "New Delhi"
-    },
-    {
-        "label": "Mumbai",
-        "value": "Mumbai"
-    },
-    {
-        "label": "Jaipur",
-        "value": "Jaipur"
-    },
-    {
-        "label": "Agra",
-        "value": "Agra"
-    },
-    {
-        "label": "Goa",
-        "value": "Goa"
-    },
-    {
-        "label": "Bengaluru",
-        "value": "Bengaluru"
-    },
-    {
-        "label": "Kolkata",
-        "value": "Kolkata"
-    },
-    {
-        "label": "Chennai",
-        "value": "Chennai"
-    },
-    {
-        "label": "Varanasi",
-        "value": "Varanasi"
-    },
-    {
-        "label": "Udaipur",
-        "value": "Udaipur"
-    },
+    { label: "Delhi", value: "Delhi" },
+    { label: "Mumbai", value: "Mumbai" },
+    { label: "Bangalore", value: "Bangalore" },
+    { label: "Kolkata", value: "Kolkata" },
+    { label: "Chennai", value: "Chennai" },
+    { label: "Jaipur", value: "Jaipur" },
+    { label: "Agra", value: "Agra" },
+    { label: "Varanasi", value: "Varanasi" },
+    { label: "Goa", value: "Goa" },
+    { label: "Kerala (Munnar)", value: "Kerala (Munnar)" },
+    { label: "Hyderabad", value: "Hyderabad" },
+    { label: "Pune", value: "Pune" },
+    { label: "Udaipur", value: "Udaipur" },
+    { label: "Rishikesh", value: "Rishikesh" },
+    { label: "Amritsar", value: "Amritsar" },
+    { label: "Leh", value: "Leh" },
+    { label: "Shimla", value: "Shimla" },
+    { label: "Manali", value: "Manali" },
+    { label: "Darjeeling", value: "Darjeeling" },
+    { label: "Mysore", value: "Mysore" },
+    { label: "Hampi", value: "Hampi" },
+    { label: "Khajuraho", value: "Khajuraho" },
+    { label: "Ajanta Caves", value: "Ajanta Caves" },
+    { label: "Ellora Caves", value: "Ellora Caves" },
+    { label: "Kanyakumari", value: "Kanyakumari" },
+    { label: "Coorg", value: "Coorg" },
+    { label: "Andaman and Nicobar Islands", value: "Andaman and Nicobar Islands" },
+    { label: "Chandigarh", value: "Chandigarh" },
+    { label: "Jodhpur", value: "Jodhpur" },
+    { label: "Bodh Gaya", value: "Bodh Gaya" },
     {
         "label": "Beijing",
         "value": "Beijing"

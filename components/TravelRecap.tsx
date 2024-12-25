@@ -123,7 +123,7 @@ const TravelRecap: React.FC = () => {
     const stream = renderer.domElement.captureStream(60);
     const recorder = new RecordRTC(stream, {
       type: "video",
-      mimeType: "video/webm;codecs=h264",
+      mimeType: "video/mp4",
       bitsPerSecond: 8000000, // 8 Mbps
       frameInterval: 1,
       quality: 100,
@@ -147,7 +147,7 @@ const TravelRecap: React.FC = () => {
       const a = document.createElement("a");
       a.style.display = "none";
       a.href = url;
-      a.download = "travel-recap.webm";
+      a.download = "travel-recap.mp4";
       document.body.appendChild(a);
       a.click();
       setTimeout(() => {
