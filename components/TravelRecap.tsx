@@ -150,7 +150,9 @@ const TravelRecap: React.FC = () => {
       a.click();
       setTimeout(() => {
         document.body.removeChild(a);
-        window?.URL.revokeObjectURL(url);
+        if (typeof window !== undefined) {
+          window.URL.revokeObjectURL(url);
+        }
       }, 100);
 
       setIsRecording(false);
